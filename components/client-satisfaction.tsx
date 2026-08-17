@@ -27,6 +27,20 @@ const testimonials = [
     content: "The automation workflows Malik built saved us countless hours. His attention to detail and proactive communication made him a pleasure to work with.",
     rating: 5,
   },
+  {
+    name: "David Chen",
+    role: "Founder, BrightCart Retail",
+    image: "/images/client-4.jpg",
+    content: "Our no-show rate dropped noticeably within the first month of the scheduling pipeline going live. Malik understood the logistics problem immediately and never overstepped into anything clinical.",
+    rating: 5,
+  },
+  {
+    name: "Fatima Noor",
+    role: "Operations Lead, Swift Logistics",
+    image: "/images/client-5.jpg",
+    content: "Response times went from hours to seconds without sacrificing accuracy. Malik's verification layer meant we never had to double-check the bot's replies before they went out.",
+    rating: 5,
+  },
 ]
 
 const stats = [

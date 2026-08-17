@@ -1,13 +1,13 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { motion, useScroll, useTransform, useSpring, useInView } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring, useInView, type Variants } from "framer-motion"
 import { Github, Linkedin, ArrowDown, Sparkles } from "lucide-react"
 import Image from "next/image"
 
 const skills = ["LangChain", "RAG Pipelines", "FastAPI", "Automation", "Deep Learning", "GPT & LLaMA"]
 
-const floatingVariants = {
+const floatingVariants: Variants = {
   animate: {
     y: [0, -15, 0],
     transition: {
@@ -18,7 +18,7 @@ const floatingVariants = {
   },
 }
 
-const glowVariants = {
+const glowVariants: Variants = {
   animate: {
     boxShadow: [
       "0 0 20px rgba(0, 255, 255, 0.2)",
@@ -70,7 +70,7 @@ export function Hero() {
     return () => clearTimeout(timeout)
   }, [displayText, isDeleting, currentSkill])
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -81,7 +81,7 @@ export function Hero() {
     },
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
@@ -175,7 +175,7 @@ export function Hero() {
                 {/* Image container */}
                 <div className="absolute inset-[6px] rounded-full overflow-hidden">
                   <Image
-                    src="/images/7.png"
+                    src="/images/profile.png"
                     alt="Malik Muhammad Ali - AI/ML Engineer"
                     fill
                     className="object-cover"

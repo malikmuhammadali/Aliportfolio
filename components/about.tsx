@@ -150,7 +150,7 @@ export function About() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/images/7.png"
+                    src="/images/profile.png"
                     alt="Malik Muhammad Ali"
                     fill
                     className="object-cover"

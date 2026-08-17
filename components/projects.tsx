@@ -2,10 +2,46 @@
 
 import { motion, useInView, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
-import { ExternalLink, Github, Bot, Workflow, FileText, TrendingUp, Eye, ArrowUpRight, X } from "lucide-react"
+import { ExternalLink, Github, Bot, Workflow, FileText, TrendingUp, Eye, ArrowUpRight, X, CalendarCheck, Zap, ShieldCheck } from "lucide-react"
 import Image from "next/image"
 
 const projects = [
+  {
+    title: "Universal Inquiry-to-Sale Pipeline",
+    description: "Production-grade n8n automation that carries inbound messages from any channel — WhatsApp, Instagram, web form, or email — through AI intent classification, live fact verification, and confidence-scored replies, escalating to a human with full context exactly when it matters.",
+    tech: ["n8n", "AI Classification", "CRM Automation", "Multi-Channel", "Conversation Memory"],
+    icon: Bot,
+    color: "from-cyan-500/30 to-purple-500/30",
+    image: "/images/sale-pipeline.png",
+    featured: true,
+  },
+  {
+    title: "Patient Appointment & No-Show Reduction Pipeline",
+    description: "End-to-end scheduling automation managing the full patient appointment lifecycle — booking, multi-stage reminders, self-service reschedule, and automatic waitlist fill on cancellations — with anything clinical or urgent routed straight to staff.",
+    tech: ["n8n", "Calendar Sync", "WhatsApp", "Waitlist Automation", "Staff Escalation"],
+    icon: CalendarCheck,
+    color: "from-emerald-500/30 to-teal-500/30",
+    image: "/images/patient-booking.png",
+    featured: true,
+  },
+  {
+    title: "Instant Lead Response Engine",
+    description: "Continuously watches the inbox and reasons about intent the moment a message arrives — question, objection, or buy signal — drafting a specific, data-grounded reply in seconds instead of hours, around the clock.",
+    tech: ["AI Reasoning", "Intent Detection", "Real-Time Automation", "RAG"],
+    icon: Zap,
+    color: "from-yellow-500/30 to-orange-500/30",
+    image: "/images/reply-pipeline.png",
+    featured: true,
+  },
+  {
+    title: "Real-Time Listing Verification Engine",
+    description: "A quality-control layer that independently checks every item mentioned in a conversation against its live source of truth — status, price, availability — before that information ever reaches a customer, so speed never comes at the cost of accuracy.",
+    tech: ["Live Data Verification", "n8n", "API Integration", "Anti-Double-Sell"],
+    icon: ShieldCheck,
+    color: "from-sky-500/30 to-blue-500/30",
+    image: "/images/listing-verification.png",
+    featured: true,
+  },
   {
     title: "Marketing Workflow Automation (Lindy.ai)",
     description: "Managed end-to-end marketing workflows for a UK client. Monitored performance and diagnosed failures to maintain 99%+ uptime.",

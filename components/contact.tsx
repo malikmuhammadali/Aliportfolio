@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
+import { motion, useInView, type Variants } from "framer-motion"
 import { useRef, useState } from "react"
 import { Mail, Github, Linkedin, Send, CheckCircle, Loader2, MapPin, Clock } from "lucide-react"
 
@@ -35,7 +35,7 @@ export function Contact() {
     }))
   }
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -46,7 +46,7 @@ export function Contact() {
     },
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
